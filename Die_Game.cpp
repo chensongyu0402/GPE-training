@@ -6,7 +6,6 @@
 #include<iostream>
 using namespace std;
 
-
 void toEast(int *arr)
 {
     int t = arr[0];
