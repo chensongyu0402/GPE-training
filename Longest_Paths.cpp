@@ -1,6 +1,6 @@
 /*
     Keyword: SPFA, Bellman-Ford
-    source1(answer): https://knightzone.studio/2019/04/21/4319/uva%EF%BC%9A10533%EF%BC%8Ddigit-primes/
+    source1(answer): https://knightzone.studio/2016/04/28/3127/uva%EF%BC%9A10000%EF%BC%8Dlongest-paths/
 */
 #include<stdlib.h>
 #include<vector>
