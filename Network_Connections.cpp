@@ -1,6 +1,8 @@
 /*
     Keyword: None
     source1(answer): https://knightzone.studio/2016/07/23/3151/uva%EF%BC%9A793%EF%BC%8Dnetwork-connections/
+    cin.ignore(): https://blog.csdn.net/qq_27278957/article/details/88917911
+    stringstream: https://dotblogs.com.tw/v6610688/2013/11/08/cplusplus_stringstream_int_and_string_convert_and_clear
 */
 #include<stdlib.h>
 #include<sstream>
