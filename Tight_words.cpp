@@ -1,6 +1,7 @@
 /*
     Keyword: DP
     source1(answer): http://tnuier.blogspot.com/2018/06/uva10081-tight-words.html
+    source2(chinese):http://web.kshs.kh.edu.tw/academy/luckycat/homework/q10081.htm
 */
 #include<stdlib.h>
 #include<iostream>
