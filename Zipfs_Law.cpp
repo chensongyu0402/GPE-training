@@ -22,6 +22,11 @@ int main()
         f = true;
         m.clear();
         while(cin >> buf) {
+            /*  How to use transform function in C++
+                source1 : https://www.twblogs.net/a/5eee24844b16c91a28492f4d
+                source2 : https://blog.csdn.net/fengbingchun/article/details/63252470
+                source3 : https://vimsky.com/zh-tw/examples/usage/cpp-algorithm-transform-function-01.html
+            */
             transform(buf.begin(), buf.end(), buf.begin(), ::tolower);
             if(buf == "endoftext")break;
             for(int i = 0; i < buf.size(); i++) {
