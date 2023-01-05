@@ -47,7 +47,7 @@ void solve ()
         for(int i = 1; i <= n; i++)
             tmp = max(tmp, X[i] + circle[i]);
         ans = min(ans, tmp);
-    }while(next_permutation(circle + 1, circle + 1 + n));
+    }while(next_permutation(circle + 1, circle + 1 + n)); // https://blog.csdn.net/HowardEmily/article/details/68064377
 }
 
 int main()
