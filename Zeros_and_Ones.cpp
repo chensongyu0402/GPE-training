@@ -1,6 +1,6 @@
 /*
     Keyword: None
-    source1(answer): 
+    source1(answer): https://github.com/Diusrex/UVA-Solutions/blob/master/10324%20Zeros%20and%20Ones.cpp
 */
 // Please note, this program passed with 2.949 s out of 3 max, so it is not very efficient...
 #include<stdlib.h>
