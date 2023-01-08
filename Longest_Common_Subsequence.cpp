@@ -1,6 +1,7 @@
 /*
     Keyword: None
     source1(answer): https://knightzone.studio/2012/03/27/1538/uva%EF%BC%9A10405%EF%BC%8Dlongest-common-subsequence/
+    source2(answer): https://zerojudge.tw/ShowThread?postid=31953&reply=0
 */
 #include<stdlib.h>
 #include<vector>
