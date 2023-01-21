@@ -1,6 +1,6 @@
 /*
     Keyword: greedy
-    source1(answer): https://knightzone.studio/2016/04/24/3102/uva%EF%BC%9A10104%EF%BC%8Deuclid-problem/
+    source1(answer): http://programming-study-notes.blogspot.com/2014/01/uva-10249-grand-dinner.html
 */
 #include <stdlib.h>
 #include <iostream>
