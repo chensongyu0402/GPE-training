@@ -11,10 +11,8 @@ using namespace std;
 const int MAX_num = 31622; // 32000
 
 class PrimeTable {
-    private:
-        vector<int> _primeNumber;
-    
     public:
+        vector<int> _primeNumber;
         PrimeTable(int size) {
             vector<bool> isPrime(size + 1, true);
             isPrime[0] = false;
@@ -30,10 +28,6 @@ class PrimeTable {
         int count() const {
             return _primeNumber.size();
         }
-
-        int operator[](int i) const {
-            return _primeNumber[i];
-        }
 };
 
 long long int getEuler(const PrimeTable &primeTable, int n)
@@ -44,7 +38,7 @@ long long int getEuler(const PrimeTable &primeTable, int n)
 
     // euler function
     for(int i = 0; i < totalPrimeCount; i++) {
-        int curr_prime = primeTable[i];
+        int curr_prime = primeTable._primeNumber[i];
         if(number % curr_prime == 0) {
             result /= curr_prime;
             result *= (curr_prime - 1);
