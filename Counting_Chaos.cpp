@@ -24,7 +24,7 @@ int main()
                 if(minutes < 10 || minutes/10 == minutes%10)break; // 01 or 11 ...
             }
             else if(hh < 10) {
-                if(hh == minutes%10)break;
+                if(hh == mm%10)break;
             } else {
                 if((hh / 10 == mm % 10) && (hh % 10 == mm / 10))break;
             }
