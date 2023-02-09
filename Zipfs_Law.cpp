@@ -39,17 +39,17 @@ int main()
                     m[word]++;
                 }
             }
-            found = false;
-            for(it = m.begin(); it != m.end(); it ++) {
-                if(it->second == n) {
-                    cout << it->first << endl;
-                    found = true;
-                }
-            }
-
-            if(found == false)
-                cout << "There is no such word." << endl;
         }
+        found = false;
+        for(it = m.begin(); it != m.end(); it ++) {
+            if(it->second == n) {
+                cout << it->first << endl;
+                found = true;
+            }
+        }
+
+        if(found == false)
+            cout << "There is no such word." << endl;
     }
     return 0;
 }
