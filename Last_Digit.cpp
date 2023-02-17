@@ -1,3 +1,7 @@
+/*
+    Keyword: math
+    source1(chinese): https://blog.csdn.net/mobius_strip/article/details/37757287
+*/
 #include<stdlib.h>
 #include<string.h>
 #include<iostream>
