@@ -9,7 +9,7 @@
 using namespace std;
 
 const int MAX_num = 31622; // 32000
-
+/* version 1
 class PrimeTable {
     public:
         vector<int> _primeNumber;
@@ -62,6 +62,56 @@ int main()
     while(scanf("%d", &n) != EOF) {
         if(n == 0)break;
         printf("%lld\n", getEuler(primeTable, n));
+    }
+    return 0;
+}
+*/
+vector<int>_primeNumber;
+void PrimeTable(int size)
+{
+    vector<bool> isPrime(size + 1, true);
+    isPrime[0] = false;
+    for(int i = 2; i <= size; i++) {
+        if(isPrime[i]) {
+            _primeNumber.push_back(i);
+            for(int j = i + i; j <= size; j+=i)
+                isPrime[j] = false;
+        }
+    }
+}
+
+long long int getEuler(const vector<int>&_primeNumber, int n)
+{
+    int number = n;
+    long long int result = n;
+    int totalPrimeCount = _primeNumber.size();
+
+    // euler function
+    for(int i = 0; i < totalPrimeCount; i++) {
+        int curr_prime = _primeNumber[i];
+        if(number % curr_prime == 0) {
+            result /= curr_prime;
+            result *= (curr_prime - 1);
+
+            while(number % curr_prime == 0)
+                number /= curr_prime;
+        }
+    }
+
+    if(number > 1) { // 有可能有大於 31622的質數
+        result /= number;
+        result *= (number -1);
+    }
+    return result;
+}
+
+int main()
+{
+    PrimeTable(MAX_num + 5);
+    int n;
+    while(scanf("%d", &n) != EOF) {
+        if(n == 0)break;
+        printf("%lld\n", getEuler(_primeNumber, n));
     }
     return 0;
 }
